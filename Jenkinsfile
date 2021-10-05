@@ -1,7 +1,11 @@
 @Library('HelloWorld') _
 pipeline {
   agent any 
-    steps {
-      HelloWorld('Dylan')
+  stages {
+    stage('build') {
+      steps {
+        HelloWorld('Dylan')
+      }
     }
-}     
+  }  
+}    
