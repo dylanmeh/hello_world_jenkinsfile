@@ -2,8 +2,10 @@
 pipeline {
   agent any 
     stages {
-      stage ('build') {
-        helloWorld()
+      stage ('build')
+        steps {
+          helloWorld()
+        }  
       }
     } 
 }    
