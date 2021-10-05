@@ -1,6 +1,5 @@
-libraries {
-     lib('HelloWorld')
- }
+@Library('HelloWorld')_
+
 pipeline {
   agent any 
   stages {
