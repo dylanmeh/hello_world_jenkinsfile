@@ -1,10 +1,10 @@
-@Library("helloWorld") _
+@Library("HelloWorld") _
 pipeline {
   agent any 
     stages {
       stage('build') {
         steps {
-          helloWorld()
+          HelloWorld()
         }
       }
     }  
